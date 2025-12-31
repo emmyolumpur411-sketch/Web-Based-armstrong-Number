@@ -13,6 +13,7 @@ dependencies = [
     "flask-mail>=0.10.0",
     "flask-migrate>=4.1.0",
     "gunicorn>=23.0.0",
+    "psycopg2-binary>=2.9.11",
     "python-dotenv>=1.2.1",
     "quas-utils>=0.0.6",
 ]
