@@ -16,7 +16,7 @@
                 Check Single Number
             </h2>
             <form method="POST" action="{{ url_for('web.web_public.calculator.check_number') }}" class="space-y-4">
-                {{ render_input("number", type="number", placeholder="Enter a number", value=checked_number|default(""), required=True, label="Number", min="0") }}
+                {{ render_input("number", type="number", placeholder="Enter a number", value=checked_number|default(""), required=True, label="Number") }}
                 {{ render_button("Check", type="primary", size="md", classes="w-full", btn_type="submit") }}
             </form>
             
@@ -42,8 +42,8 @@
             </h2>
             <form method="POST" action="{{ url_for('web.web_public.calculator.find_range') }}" class="space-y-4">
                 <div class="grid grid-cols-2 gap-4">
-                    {{ render_input("min_number", type="number", placeholder="Min", value=min_num|default(""), required=True, label="Minimum", min="0") }}
-                    {{ render_input("max_number", type="number", placeholder="Max", value=max_num|default(""), required=True, label="Maximum", min="0") }}
+                    {{ render_input("min_number", type="number", placeholder="Min", value=min_num|default(""), required=True, label="Minimum") }}
+                    {{ render_input("max_number", type="number", placeholder="Max", value=max_num|default(""), required=True, label="Maximum") }}
                 </div>
                 {{ render_button("Find", type="primary", size="md", classes="w-full", btn_type="submit") }}
             </form>
